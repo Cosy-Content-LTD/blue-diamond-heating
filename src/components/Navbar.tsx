@@ -26,7 +26,6 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 h-20 flex items-center justify-between">
-        {/* Logo */}
         <a href="/" className="flex items-center gap-3 group">
           <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-300">
             <span className="text-primary-foreground font-black font-display text-lg">BD</span>
@@ -37,7 +36,6 @@ export default function Navbar() {
           </div>
         </a>
 
-        {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             
@@ -50,7 +48,6 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Phone CTA */}
         
           href="tel:0234567891"
           className="hidden md:flex items-center gap-2 bg-primary text-primary-foreground font-bold px-5 py-2.5 rounded-full shadow-xl hover:scale-105 active:scale-95 transition-all duration-300 text-sm"
@@ -59,7 +56,6 @@ export default function Navbar() {
           0234 567 891
         </a>
 
-        {/* Mobile Menu Toggle */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden p-2 rounded-xl text-white hover:bg-primary/10 transition-colors"
@@ -69,7 +65,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div

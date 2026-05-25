@@ -38,7 +38,7 @@ export default function Navbar() {
 
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            
+            <a
               key={link.label}
               href={link.href}
               className="text-sm font-bold uppercase tracking-widest text-white/80 hover:text-white transition-colors duration-300"
@@ -48,7 +48,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        
+        <a
           href="tel:0234567891"
           className="hidden md:flex items-center gap-2 bg-primary text-primary-foreground font-bold px-5 py-2.5 rounded-full shadow-xl hover:scale-105 active:scale-95 transition-all duration-300 text-sm"
         >
@@ -75,7 +75,7 @@ export default function Navbar() {
             className="md:hidden bg-background/98 backdrop-blur-lg border-t border-border/40 px-6 py-6 flex flex-col gap-5"
           >
             {navLinks.map((link) => (
-              
+              <a
                 key={link.label}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
@@ -84,7 +84,7 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-            
+            <a
               href="tel:0234567891"
               className="flex items-center justify-center gap-2 bg-primary text-primary-foreground font-bold px-5 py-3 rounded-full shadow-xl text-sm mt-2"
             >
